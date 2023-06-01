@@ -1,11 +1,11 @@
 <?php
-require_once('D:\Documents\AnaClaudia\poo\TP4\Figura.php');
+require_once('Figura.php');
 
 class Circulo extends Figura{
     private $radio;
     
-    function __construct($x, $y, $radio){
-        parent::__construct($x, $y);
+    function __construct($radio){
+        parent::__construct();
         $this->radio = $radio;
     }
 

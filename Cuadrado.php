@@ -5,8 +5,8 @@ class Cuadrado extends Figura{
     static public $cantidadLados = 4;       //cuántos lados tiene, es de la clase
     private $lado;   //cuanto mide cada lado
       
-    function __construct($x, $y, $lado){
-        parent::__construct($x, $y);
+    function __construct($lado){
+        parent::__construct();
         $this->lado = $lado;
        
     }
@@ -14,7 +14,6 @@ class Cuadrado extends Figura{
     public function clonar(){
         $clonado = new Cuadrado($this->x,$this->y,$this->lado);   
         return $clonado;
-
     }
 
     static public function getCantidadLados(){
