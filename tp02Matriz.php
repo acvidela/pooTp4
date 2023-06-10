@@ -132,6 +132,4 @@ $matrix2 = new miMatriz(3);
 $matrix2->caragarAleatorios(1,10);
 $matrix2->mostrarMatriz();
 ($matrix->sumaMatrices($matrix2))->mostrarMatriz();
-
-
 ?>

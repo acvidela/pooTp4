@@ -23,7 +23,12 @@ class Cuadrado extends Figura{
     public function getSuperficie(){
        return pow($this->lado,2);
     }
-    
+    public function mostrarPropiedades()
+    {
+        parent::mostrarPropiedades();
+        echo ("Cantidad de lados: ".self::$cantidadLados. PHP_EOL);
+        echo ("Longitud lado: ".$this->lado. PHP_EOL);
+    }
 }  
 
 ?>

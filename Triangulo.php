@@ -5,8 +5,8 @@ class Triangulo extends Figura{
     private $base;
     private $altura;
     
-    function __construct($x, $y, $base,$altura){
-        parent::__construct($x, $y);
+    function __construct($base,$altura){
+        parent::__construct();
         $this->base = $base;
         $this->altura = $altura;
     }
@@ -15,6 +15,12 @@ class Triangulo extends Figura{
        return $this->base * $this->altura * 0.5;
     }
     
+    public function mostrarPropiedades()
+    {
+        parent::mostrarPropiedades();
+        echo ("Base: ".$this->base. PHP_EOL);
+        echo ("Altura: ".$this->altura. PHP_EOL);
+    }
 }
 
 ?>

@@ -8,7 +8,7 @@ function writeln($texto){
     echo($texto);
     echo (PHP_EOL);
 }
-
+/*
 $c1 = new Cuadrado(10);
 $c2 = new Cuadrado(7);
 $s2 = new Circulo(5);
@@ -23,5 +23,11 @@ $figuras = array();
     $total += $figuras[$i]->getSuperficie();
  }
  writeln($total);
-
+*/
+$t = new Triangulo(3,5);
+$t->mostrarPropiedades();
+$cuad = new Cuadrado(5);
+$cuad->mostrarPropiedades();
+$cir = new Circulo(8);
+$cir->mostrarPropiedades();
 ?>

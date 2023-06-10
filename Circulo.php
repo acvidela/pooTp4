@@ -12,7 +12,11 @@ class Circulo extends Figura{
     public function getSuperficie(){
        return $this->radio * $this->radio * 3.14;
     }
-    
+    public function mostrarPropiedades()
+    {
+        parent::mostrarPropiedades();
+        echo ("Radio: ".$this->radio. PHP_EOL);
+    }    
 }
 /*$c = new Circulo(,,6);
 echo($c->getPosicion());
